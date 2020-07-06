@@ -5,6 +5,8 @@
  https://opensource.org/licenses/MIT
 -->
 
+Icon Picker inspired and forked from [React font icon picker](https://github.com/fontIconPicker/react-fonticonpicker)
+
 # React FontIconPicker Component
 
 [![codecov](https://codecov.io/gh/fontIconPicker/react-fonticonpicker/branch/master/graph/badge.svg)](https://codecov.io/gh/fontIconPicker/react-fonticonpicker) [![Build Status](https://travis-ci.org/fontIconPicker/react-fonticonpicker.svg?branch=master)](https://travis-ci.org/fontIconPicker/react-fonticonpicker) [![jest](https://facebook.github.io/jest/img/jest-badge.svg)](https://github.com/facebook/jest) [![npm version](https://badge.fury.io/js/%40fonticonpicker%2Freact-fonticonpicker.svg)](https://badge.fury.io/js/%40fonticonpicker%2Freact-fonticonpicker) [![peerDependencies Status](https://david-dm.org/fontIconPicker/react-fonticonpicker/peer-status.svg)](https://david-dm.org/fontIconPicker/react-fonticonpicker?type=peer) [![GitHub license](https://img.shields.io/github/license/fontIconPicker/react-fonticonpicker.svg)](https://github.com/fontIconPicker/react-fonticonpicker/blob/master/LICENSE)
