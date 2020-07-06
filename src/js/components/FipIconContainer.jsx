@@ -46,6 +46,7 @@ class FipIconContainer extends React.PureComponent {
 		handleChangePage: PropTypes.func.isRequired,
 		renderIcon: PropTypes.func.isRequired,
 		noIconPlaceholder: PropTypes.string.isRequired,
+		usePaging: PropTypes.bool.isRequired,
 	};
 
 	static defaultProps = {
@@ -344,7 +345,7 @@ class FipIconContainer extends React.PureComponent {
 	render() {
 		return (
 			<div className="rfipicons">
-				{this.renderPager()}
+				{this.props.usePaging && this.renderPager()}
 				<div className="rfipicons__selector">
 					{this.renderIconView()}
 				</div>

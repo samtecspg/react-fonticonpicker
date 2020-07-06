@@ -1,8 +1,9 @@
 {
-  "name": "@fonticonpicker/react-fonticonpicker",
+  "name": "@spg/react-fonticonpicker",
   "version": "1.2.0",
   "description": "A react component to show a picker element to select font icons or SVG.",
-  "main": "dist/fonticonpicker.react.js",
+  "main": "dist/fonticonpicker.react",
+  "typings": "dist/fonticonpicker.react",
   "directories": {
     "doc": "docs"
   },
@@ -15,7 +16,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/fontIconPicker/react-fonticonpicker.git"
+    "url": "git+https://github.com/dakavisa/react-fonticonpicker.git"
   },
   "keywords": [
     "react",
@@ -24,17 +25,17 @@
     "svgpicker",
     "iconpicker"
   ],
-  "author": "Swashata Ghosh <swashata4u@gmail.com> (https://swashata.me)",
+  "author": "dakavisa <dakavisa623@gmail.com>",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/fontIconPicker/react-fonticonpicker/issues"
   },
   "homepage": "https://github.com/fontIconPicker/react-fonticonpicker#readme",
   "peerDependencies": {
-    "react": "^16.3.0",
-    "react-dom": "^16.3.0",
     "classnames": "^2.2.5",
     "prop-types": "^15.6.1",
+    "react": "^16.3.0",
+    "react-dom": "^16.3.0",
     "react-transition-group": "^2.3.0"
   },
   "devDependencies": {
@@ -92,12 +93,14 @@
     "stylelint-config-prettier": "^3.0.4",
     "stylelint-config-recommended-scss": "^3.2.0",
     "stylelint-scss": "^3.0.0",
-    "webpack": "^4.4.1",
+    "webpack": "^4.20.2",
     "webpack-bundle-analyzer": "^2.11.1",
-    "webpack-cli": "^2.0.13",
+    "webpack-cli": "^3.1.1",
     "webpack-dev-server": "^3.1.1"
   },
-  "dependencies": {},
+  "dependencies": {
+    "uglifyjs-webpack-plugin": "^2.2.0"
+  },
   "publishConfig": {
     "access": "public"
   }

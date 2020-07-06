@@ -9,8 +9,15 @@
 
 	// Selector box
 	&__selector {
-		overflow: hidden;
 		padding: 16px;
+		overflow: hidden;
+	}
+
+	// Selector box without paging
+	&__selectorNoPaging {
+		padding: 16px;
+		max-height: 350px;
+		overflow-y: scroll;
 	}
 
 	// For animation
@@ -19,6 +26,12 @@
 		.rfipdropdown__selector {
 			transition: max-height 300ms ease-out, padding 300ms ease-out;
 			padding: 16px;
+		}
+		.rfipdropdown__selectorNoPaging {
+			transition: max-height 300ms ease-out, padding 300ms ease-out;
+			padding: 16px;
+			max-height: 350px;
+			overflow-y: scroll;
 		}
 	}
 }

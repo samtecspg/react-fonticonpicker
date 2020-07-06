@@ -48,6 +48,7 @@ class FipDropDown extends React.PureComponent {
 		handleChangeCategory: PropTypes.func.isRequired,
 		handleChangePage: PropTypes.func.isRequired,
 		handleChangeSearch: PropTypes.func.isRequired,
+		usePaging: PropTypes.bool.isRequired,
 	};
 
 	static defaultProps = {
@@ -96,7 +97,13 @@ class FipDropDown extends React.PureComponent {
 
 	render() {
 		return (
-			<div className="rfipdropdown__selector">
+			<div
+				className={
+					this.props.usePaging
+						? 'rfipdropdown__selector'
+						: 'rfipdropdown__selectorNoPaging'
+				}
+			>
 				{this.props.showSearch ? (
 					<FipSearch
 						handleSearch={this.handleSearch}
@@ -129,6 +136,7 @@ class FipDropDown extends React.PureComponent {
 					handleChangePage={this.props.handleChangePage}
 					renderIcon={this.props.renderIcon}
 					noIconPlaceholder={this.props.noIconPlaceholder}
+					usePaging={this.props.usePaging}
 				/>
 			</div>
 		);

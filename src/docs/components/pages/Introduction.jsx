@@ -91,6 +91,8 @@ class Introduction extends React.Component {
 							theme="teal"
 							isMulti={false}
 							renderUsing="data-icomoon"
+							usePaging={false}
+							iconsPerPage={10000000}
 						/>
 					</div>
 				</div>

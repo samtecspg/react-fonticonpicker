@@ -18,6 +18,7 @@ const defaultMultiValue = [];
 const defaultStringValue = '';
 
 class FontIconPicker extends React.PureComponent {
+	static displayName = 'FontIconPicker';
 	static propTypes = {
 		icons: PropTypes.oneOfType([
 			PropTypes.arrayOf(PropTypes.string),
@@ -54,6 +55,7 @@ class FontIconPicker extends React.PureComponent {
 		noIconPlaceholder: PropTypes.string,
 		noSelectedPlaceholder: PropTypes.string,
 		closeOnSelect: PropTypes.bool,
+		usePaging: PropTypes.bool.isRequired,
 	};
 
 	static defaultProps = {
@@ -74,8 +76,6 @@ class FontIconPicker extends React.PureComponent {
 		noSelectedPlaceholder: 'Select icon',
 		closeOnSelect: false,
 	};
-
-	static displayName = 'FontIconPicker';
 
 	static getDerivedStateFromProps(nextProps, prevState) {
 		// Init the state
@@ -457,6 +457,7 @@ class FontIconPicker extends React.PureComponent {
 			handleChangeCategory: this.handleChangeCategory,
 			handleChangePage: this.handleChangePage,
 			handleChangeSearch: this.handleChangeSearch,
+			usePaging: this.props.usePaging,
 		};
 		return (
 			<div className={this.state.elemClass} ref={this.fipRef}>
